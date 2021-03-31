@@ -1,0 +1,48 @@
+@media screen and (min-width: 767px){
+
+    #grid-container {
+        grid-template-rows: 65px 300px auto;
+        height: 100vh;
+        grid-template-areas:
+        "Nav"
+        "Header"
+        "sections";
+    }
+
+    nav {
+        h1{
+            font-size: 28px;
+        }
+    }
+
+    .nav-ul{
+            li a{
+            font-size: 16px;
+            }
+    }
+
+
+    header { 
+        grid-area: Header; 
+        text-align: start;
+        
+        #header-text{
+            font-size: 18px;
+            padding: 15px;
+        }
+        h1{
+            font-size: 45px;
+        }
+    }
+
+    .tabs{
+        font-size: 20px;
+        img {
+            width:auto;
+            }
+    }
+    
+    .tab-tekst{
+        font-size: 17px;
+    }
+}   

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/tablet.css">
+    <link rel="stylesheet" href="Css/laptop.css">
+    <link rel="stylesheet" href="Css/Desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ExtreemTravel - Activiteiten</title>
+
+</head>
+<body>
+    <div id="grid-container">
+        <!-- Top nav -->    
+        <nav>
+            <a href="index.html"><h1>ExtreemTravel</h1></a>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- nav links -->
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="About-us.html">About us</a></li>
+                <li><a href="#" class="active">Activiteiten</a></li>
+                <li><a href="Lastmin.html">Last minute</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <!-- hamburger menu-->
+        </nav>
+
+        <header>
+            <h1 style="text-align: center; padding: 15px 0px;">Activiteiten</h1>
+            <p id="header-text">
+              
+        </header>
+
+        <div id="sections">
+        <section id="Tab1" class="tabs"> 
+            <h2>Windsurfing</h2>
+            <p id="tab2-tekst" class="tab-tekst">
+                Meer informatie over windsurfing?<br>
+            </p>
+            <a href="Windsurfing.html"> Lees verder...</a>
+        </section>
+
+        <section id="Tab2" class="tabs">
+            <h2>Mountainclimbing</h2>
+            <p id="tab2-tekst" class="tab-tekst">
+                Meer informatie over Mountainclimbing?<br>
+            </p>
+            <a href="Mountainclimbing.html"> Lees verder...</a>
+        </section>
+
+        <section id="Tab3" class="tabs">
+            <h2>Snorkelen</h2>
+            <p id="tab2-tekst" class="tab-tekst">
+                Meer informatie over snorkelen?<br>
+            </p>
+            <a href="Snorkelen.html"> Lees verder...</a>       
+        </section>
+        </div>     
+        <footer>
+          ©Copyright by ExtreemTravel 2021 
+      </footer>
+      </div>
+ 
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navUL = document.getElementById('nav-ul');
+   
+    hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
+    })
+</script>
+</html>

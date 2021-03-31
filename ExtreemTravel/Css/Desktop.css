@@ -1,0 +1,28 @@
+@media screen and (min-width: 1439px) {
+  a {
+    text-decoration: none;
+  }
+  header {
+    background-image: url(/ExtreemTravel/Afbeeldingen/header_back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  header #header-text {
+    font-size: 22px;
+  }
+  header h1 {
+    font-size: 50px;
+    padding: 30px 20px;
+    margin: 0%;
+  }
+  .tabs {
+    font-size: 24px;
+  }
+  .tab-tekst {
+    font-size: 20px;
+  }
+  footer {
+    display: initial;
+  }
+}
+/*# sourceMappingURL=Desktop.css.map */

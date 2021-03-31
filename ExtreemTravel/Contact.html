@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/tablet.css">
+    <link rel="stylesheet" href="Css/laptop.css">
+    <link rel="stylesheet" href="Css/Desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ExtreemTravel - Contact</title>
+
+</head>
+<body>
+    <div id="grid-container">
+        <!-- Top nav -->    
+        <nav>
+            <a href="index.html"><h1>ExtreemTravel</h1></a>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- nav links -->
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="About-us.html">About us</a></li>
+                <li><a href="activiteiten.html">Activiteiten</a></li>
+                <li><a href="Lastmin.html">Last minute</a></li>
+                <li><a href="#Contact" class="active">Contact</a></li>
+            </ul>
+            <!-- hamburger menu-->
+        </nav>
+
+        <header>
+            <h1 style="text-align: center; padding: 15px 0px;">Contact</h1>
+            <p id="header-text">
+              
+        </header>
+
+        <div id="sections">
+
+        <section id="Tab1" class="tabs">
+           <h3>Voornaam:</h3><input type="text" id="fname" class="forum" name="voornaam" placeholder="Jouw naam..."><br>
+           <h3>Achternaam:</h3> <input type="text" id="aname" class="forum" name="Achternaam" placeholder="Jouw achternaam..."> <br>
+           <h3>Email:</h3> <input type="email" id="femail" class="forum" name="email" placeholder="Jouw Email..."> <br>
+           <h3>Telefoon nummer:</h3> <input type="number" id="ftel" class="forum" name="telnummer" placeholder="Jouw Telefoon nummer..."> <br>
+           <h3>Vraag</h3> <textarea id="ftext" class="forum" name="vraag" placeholder="jouw vraag?" style="height: 200px;"></textarea><br>
+           <input type="submit" value="Submit">
+        </section>
+
+        <section  style="display: none;"id="Tab2" class="tabs">
+
+        </section>
+
+        <section style="display: none;" id="Tab3" class="tabs">
+
+        </section>
+
+        </div>     
+        <footer>
+          ©Copyright by ExtreemTravel 2021 
+      </footer>
+      </div>
+ 
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navUL = document.getElementById('nav-ul');
+   
+    hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
+    })
+</script>
+</html>

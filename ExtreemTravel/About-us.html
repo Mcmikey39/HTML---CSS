@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/tablet.css">
+    <link rel="stylesheet" href="Css/laptop.css">
+    <link rel="stylesheet" href="Css/Desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ExtreemTravel - About us</title>
+
+</head>
+<body>
+    <div id="grid-container">
+        <!-- Top nav -->    
+        <nav>
+            <a href="index.html"><h1>ExtreemTravel</h1></a>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- nav links -->
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="#" class="active">About us</a></li>
+                <li><a href="activiteiten.html">Activiteiten</a></li>
+                <li><a href="Lastmin.html">Last minute</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <!-- hamburger menu-->
+        </nav>
+
+        <header>
+            <h1 style="text-align: center; padding: 15px 0px;">About us</h1>
+            <p id="header-text">
+              
+        </header>
+
+        <div id="sections">
+        <section id="Tab1" class="tabs" style="height: 25vh;"> 
+         <h3>Under Constraction</h3>
+        </section>
+
+        </div>     
+        <footer>
+          ©Copyright by ExtreemTravel 2021 
+      </footer>
+      </div>
+ 
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navUL = document.getElementById('nav-ul');
+   
+    hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
+    })
+</script>
+</html>

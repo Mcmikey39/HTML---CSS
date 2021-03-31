@@ -1,0 +1,72 @@
+@media screen and (min-width: 1023px){
+    #grid-container {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 65px 400px auto 40px;
+        grid-template-areas:
+        "Nav"
+        "Header"
+        "sections"
+        "footer";
+    }
+
+    a{
+        text-decoration: none;
+    }
+ 
+    //Header
+    header { 
+        grid-area: Header; 
+
+        #header-text{
+            font-size: 22px;
+            padding: 0px 20px;
+        }
+        h1{
+            font-size: 50px;
+            padding: 30px 20px; margin: 0%;
+        }
+    }
+    #sections{
+        display: grid;
+        grid-area: sections;
+        grid-template-rows: auto;
+        color: white;
+    }
+
+    #Tab1 {
+        grid-row: 1/-1;
+        grid-column: 1/1;
+        height: auto;
+    }
+
+    #Tab2 {  
+        grid-row: 1/-1;
+        grid-column: 2/3;   
+    }
+
+    #Tab3 {
+        grid-row: 1/-1;
+        grid-column: 3/4;
+    
+    }
+    
+    .tabs{
+        font-size: 24px;
+    }
+    
+    .tab-tekst{
+        font-size: 20px;
+    }
+
+    footer{
+        display: initial;
+        grid-area: footer;
+        text-align: center;
+        margin: 0%; padding: 10px 15px;
+        background-color:#132646;
+        color: white;
+
+    }
+}

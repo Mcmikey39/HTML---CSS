@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/tablet.css">
+    <link rel="stylesheet" href="Css/laptop.css">
+    <link rel="stylesheet" href="Css/Desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ExtreemTravel - Snorkelen</title>
+
+</head>
+<body>
+    <div id="grid-container">
+        <!-- Top nav -->    
+        <nav>
+            <a href="index.html"><h1>ExtreemTravel</h1></a>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- nav links -->
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="About-us.html">About us</a></li>
+                <li><a href="activiteiten.html" class="active">Activiteiten</a></li>
+                <li><a href="Lastmin.html">Last minute</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <!-- hamburger menu-->
+        </nav>
+
+        <header>
+            <h1 style="text-align: center; padding: 15px 0px;">Snorkelen</h1>
+            <p id="header-text">
+              
+        </header>
+
+        <div id="sections">
+
+            <section id="Tab1" class="tabs"> 
+                <img src="/Afbeeldingen/snorkelen.jpg" alt="" height="90%" style="border-radius: 100px; padding-top: 30px;">
+                </section>
+        
+                <section id="Tab2" class="tabs" style="padding: 30px;"> 
+                Dit pakket is de beste combinatie: natuurreservaten en koraalrif. <br>
+                Spciale aanbieding voor backpackers. onder begeleding van experts. <br>
+                Na drie dagen lange tocht door het oerwoud. <br>
+                Geniet je van drie dagen snorkelen met verblijf in Hotel Ecosta. <br>
+
+                <p> Totale Prijs is $499 pp. </p>
+                
+                We vliegen met KLM. <br>
+                We vertrekken elke donderdag om 08:00 uur vanaf schiphol<br>
+                De terugreis is elke donderdag om 13:00 uur. <br>
+                Aankomst op schiphol is uiterlijk de volgende dag om 16:00 uur lokale tijd.
+                </section>
+
+        </div>     
+        <footer>
+          ©Copyright by ExtreemTravel 2021 
+      </footer>
+      </div>
+ 
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navUL = document.getElementById('nav-ul');
+   
+    hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
+    })
+</script>
+</html>

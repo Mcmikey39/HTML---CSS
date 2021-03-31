@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Style.css">
+    <link rel="stylesheet" href="Css/tablet.css">
+    <link rel="stylesheet" href="Css/laptop.css">
+    <link rel="stylesheet" href="Css/Desktop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>ExtreemTravel</title>
+
+</head>
+<body>
+    <div id="grid-container">
+        <!-- Top nav -->    
+        <nav>
+            <a href="#Home" class="active"><h1>ExtreemTravel</h1></a>
+
+            <button class="hamburger" id="hamburger">
+                <i class="fa fa-bars"></i>
+            </button>
+            <!-- nav links -->
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="About-us.html">About us</a></li>
+                <li><a href="activiteiten.html">Activiteiten</a></li>
+                <li><a href="Lastmin.html">Last minute</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+            <!-- hamburger menu-->
+        </nav>
+
+        <header>
+            <h1>ExtreemTravel</h1>
+            <p id="header-text">
+                De online booking website voor de exreemste vakanties. <br>
+                Boek je vakantie nu voor de voordeligste bestemmingen. <br>
+                Ons specialisme: de actiefste vakanties voor windsurfers, snorkelaars en mountainclimbers
+                op alle continenten.</p>
+        </header>
+
+        <div id="sections">
+        <section id="Tab1" class="tabs">
+            
+            <h2>Cancún México</h2>
+            <P id="tab1-tekst" class="tab-tekst">
+                Deze maand is het aantrekkelijkst voor windsurfing in Cancún, Mexico.<br>
+            </P>
+            <img src="#" alt="#" id="Windsurf-foto" class="fotos">
+            <a href="activiteiten.html"> Lees verder... </a> 
+            
+        </section>
+
+        <section id="Tab2" class="tabs">
+            <h2>Himalayas</h2>
+            <p id="tab2-tekst" class="tab-tekst">
+                Deze week vertrekt een groep enhousiaste klimmers naar de Himalayas.<br>
+            </p>
+            <a href="activiteiten.html"> Lees verder...</a>
+            <img src="#" alt="#" id="klim-foto" class="fotos">
+        </section>
+
+        <section id="Tab3" class="tabs">
+            
+            <h2>Costa Rica</h2>
+            <p id="tab3-tekst" class="tab-tekst">
+                Snorkelen in Costa Rica. Naast de natuurreservaten heeft Costa Rica 's werelds
+                tweede groote koraalrif. <br>   
+            </p>
+            <img src="#" alt="#" id="snorkel-foto" class="fotos">
+            <a href="activiteiten.html"> Lees verder... </a>
+            
+        </section>
+        </div>     
+        <footer>
+          ©Copyright by ExtreemTravel 2021 
+      </footer>
+      </div>
+ 
+</body>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navUL = document.getElementById('nav-ul');
+   
+    hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('show');
+    })
+</script>
+</html>
